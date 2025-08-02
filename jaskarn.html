@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jaskarn - Personal Website</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .nav-bar nav {
+      width: auto;
+      height: fit-content;
+      padding: 10px;
+      border-bottom: 1px solid darkgray;
+    }
+
+    .nav-bar {
+      background-color: white;
+      padding: 15px 0;
+      text-align: left;
+    }
+
+    .nav-bar ul li {
+      display: inline;
+      margin: 20px;
+    }
+
+    .nav-bar ul li a {
+      text-decoration: none;
+      color: rgb(0, 110, 255);
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    .nav-bar ul li a:hover {
+      color: #008B8B;
+    }
+
+    .hover-section {
+      position: relative;
+      text-align: center;
+    }
+
+    .header-img {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: auto;
+    }
+
+    .hover-text {
+      position: absolute;
+      top: 70%;
+      left: 40%;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      opacity: 0;
+      transition: 0.4s;
+    }
+
+    .hover-section:hover .hover-text {
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .profile {
+      text-align: center;
+      margin: 30px 0;
+      padding: 20px 0;
+    }
+
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid #008B8B;
+    }
+
+    .description {
+      font-size: 20px;
+      color: #008B8B;
+      margin: 10px 0;
+      font-weight: normal;
+      line-height: 1.5;
+    }
+
+    .projects-heading {
+      font-size: 24px;
+      color: #008B8B;
+      margin: 15px 0;
+      text-decoration: overline;
+    }
+
+    .projects {
+      padding: 30px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .project {
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .project img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .project img:hover {
+      transform: scale(1.02);
+    }
+
+    .project p {
+      flex: 1;
+      text-align: left;
+      padding: 10px;
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .gallery h2 {
+      padding: 30px;
+      text-align: center;
+      color: #008B8B;
+      text-decoration: overline;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 0 30px 30px;
+    }
+
+    .gallery-container img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .gallery-container img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header class="nav-bar">
+    <div id="box">
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <section class="hover-section">
+      <img src="deakinlogo.jpeg" alt="Deakin University" class="header-img">
+      <div class="hover-text">Hey, I'm Jaskarn</div>
+    </section>
+  </header>
+  <section class="profile">
+    <img src="profile.png" alt="My Photo" class="profile-img">
+    <p class="description">I am a full-stack web developer based in Melbourne, Australia</p>
+    <hr class="profile-line">
+    <h2 class="projects-heading">Here's what I've done so far</h2>
+  </section>
+  <section class="projects">
+    <div class="project">
+      <img src="project1.png" alt="Project 1">
+      <p>I built a full-stack task management app using React and Node.js where users can create, update, and track tasks with real-time updates.</p>
+    </div>
+    <div class="project">
+      <img src="project2.png" alt="Project 2">
+      <p>I developed an online food ordering platform with login/signup, restaurant listings, and order tracking using MongoDB, Express, React, and Node.js (MERN stack).</p>
+    </div>
+    <div class="project">
+      <img src="project3.png" alt="Project 3">
+      <p>I created a developer discussion forum with user authentication, post creation, and comment threads using PostgreSQL, Django, and Bootstrap.</p>
+    </div>
+  </section>
+  <section class="gallery">
+    <h2>My Photos</h2>
+    <div class="gallery-container">
+      <img src="photo1.png" alt="Photo 1">
+      <img src="photo2.png" alt="Photo 2">
+      <img src="photo3.png" alt="Photo 3">
+      <img src="photo4.png" alt="Photo 4">
+    </div>
+  </section>
+</body>
+</html>
